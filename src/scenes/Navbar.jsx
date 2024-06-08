@@ -61,7 +61,10 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
             className="rounded-full bg-red "
             onClick={() => setisMenuToggled(!isMenuToggled)}
           >
-            <img alt="menu-icon" src="../assets/menu-icon.svg" />
+            <img
+              alt="menu-icon"
+              src={require("../assets/menu-icon.svg").default}
+            />
           </button>
         )}
 
@@ -70,7 +73,10 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
           <div className="fixed right-0 bottom-0 h-full bg-blue w-[300px]">
             <div className="flex justify-end p-12">
               <button onClick={() => setisMenuToggled(!isMenuToggled)}>
-                <img alt="close-icon" src="../assets/close-icon.svg" />
+                <img
+                  alt="close-icon"
+                  src={require("../assets/close-icon.svg").default}
+                />
               </button>
             </div>
 
