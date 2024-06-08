@@ -2,6 +2,7 @@ import Navbar from "./scenes/Navbar";
 import DotGroup from "./scenes/DotGroup";
 import useMediaQuery from "./hooks/useMediaQuery";
 import Landing from "./scenes/Landing";
+import LineGradient from "./components/LineGradient";
 import { useState, useEffect } from "react";
 
 function App() {
@@ -36,6 +37,7 @@ function App() {
 
         <Landing setSelectedPage={setSelectedPage} />
       </div>
+      <LineGradient />
     </div>
   );
 }
